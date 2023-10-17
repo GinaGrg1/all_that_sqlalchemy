@@ -1,0 +1,6 @@
+Limitations of ORM
+- Not fit for complex data models where complex joins are required
+- Cross-database transactions
+- Fine-grained transaction control
+- Query tuning
+- Security considerations
