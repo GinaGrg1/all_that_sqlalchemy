@@ -42,7 +42,7 @@ class BookAuthor(Base):
             return f"<BookAuthor (bookauthor_id='{self.bookauthor_id,}', author_id='{self.author_id}', book_id='{self.book_id}', 
                   first_name='{self.author.first_name}', last_name='{self.author.last_name}', title='{self.book.title}')>"
 
-Base.metadata.create_all(engine)
+Base.metadata.create_all(engine) # Creates tables authors, books and bookauthors in the database.
 
 # Adding data when making POST request.
 def add_book(book: Book, author: Author):
